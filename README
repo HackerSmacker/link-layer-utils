@@ -1,0 +1,21 @@
+Link Layer Utils
+
+This repository is intended to provide some utility programs that will be useful in aiding their operator troubleshoot, test, and evaluate the 
+competence of custom network cards. By "custom network cards," I am primarily referring to non-Ethernet network interfaces -- this includes,
+but is not limited to:
+- KISS TNCs connected via async
+- HDLC over async
+- traditional Serial Line IP (SLIP) over async
+- PPP over async
+- raw AX.25 frames over async
+- SDLC to and from IBM 3174 establishment controller boxes
+
+Hopefully these are useful to at least someone; I tried to make these as simple as possible!
+
+Included programs:
+- kissencap: encapsulate arbitrary data into a KISS frame, for transmission via an amateur radio packet TNC.
+- slipencap: encapsulate IP frames (from a pipe) into a SLIP frame, useful for testing SLIP stacks on embedded systems.
+- hdlcencap: encapsulate arbitrary data into an HDLC frame
+
+
+(SOME OF THESE HAVE NOT YET BEEN WRITTEN!)
